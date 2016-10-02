@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="q1">which of the following is a container used to collect different kinds of inputs from the user.</string>
+    <string name="q2">Which of the following values are used by method attribute?</string>
+    <string name="q3">which tag is used to implement form element?</string>
+    <string name="q4">Which of the following allows specifying styles for the visual elements of the website?</string>
+    <string name="q5">Which of the following element allows multi-line text input?</string>
+</resources>
