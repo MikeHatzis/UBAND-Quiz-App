@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.nkp.quizApp.R;
-
 public class TextMainActivity extends AppCompatActivity {
 
 
@@ -24,9 +22,7 @@ public class TextMainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (et_answer.getText().equals(new String("Form"))
-                        || et_answer.getText().equals(new String("FORM"))
-                        || et_answer.getText().equals(new String("form"))) {
+                if (et_answer.getText().toString().equalsIgnoreCase(new String("Form"))) {
                     MainActivity.score++;
                 }
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));

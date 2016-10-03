@@ -25,7 +25,7 @@ public class CheckMainActivity extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (c1.isChecked() || c2.isChecked()) {
+                if (c1.isChecked() && c2.isChecked() && !c3.isChecked() && !c3.isChecked()) {
                     MainActivity.score++;
                 }
                 startActivity(new Intent(getApplicationContext(), TextMainActivity.class));

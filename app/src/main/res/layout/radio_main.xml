@@ -22,7 +22,7 @@
             android:id="@+id/question"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:padding="12.0dip"
+            android:padding="@dimen/rad_margin"
             android:text="@string/q1"
             android:textColor="#fff"
             android:textSize="18.0sp" />
@@ -36,12 +36,11 @@
 
         <LinearLayout
             android:id="@+id/option_wrapper"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@+id/question_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingBottom="25.0dip"
-            android:paddingTop="25.0dip">
+            android:paddingBottom="@dimen/rad_margin"
+            android:paddingTop="@dimen/rad_margin">
 
             <RadioGroup
                 android:layout_width="match_parent"
