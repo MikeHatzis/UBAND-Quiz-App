@@ -43,11 +43,9 @@
             android:paddingBottom="25.0dip"
             android:paddingTop="25.0dip">
 
-            <LinearLayout
+            <RadioGroup
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:layout_height="wrap_content">
 
                 <RadioButton
                     android:id="@+id/opt_1"
@@ -68,13 +66,6 @@
                     android:layout_weight="1"
                     android:padding="@dimen/rad_padding"
                     android:text="Head" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:weightSum="2">
 
                 <RadioButton
                     android:id="@+id/opt_3"
@@ -95,7 +86,7 @@
                     android:layout_weight="1"
                     android:padding="@dimen/rad_padding"
                     android:text="None of these" />
-            </LinearLayout>
+            </RadioGroup>
         </LinearLayout>
     </ScrollView>
 

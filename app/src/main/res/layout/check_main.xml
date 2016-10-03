@@ -22,7 +22,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:padding="12.0dip"
-            android:text="Q."
+            android:text="@string/q2"
             android:textColor="#fff"
             android:textSize="18.0sp" />
     </LinearLayout>
@@ -50,12 +50,13 @@
 
                 <CheckBox
                     android:id="@+id/opt_1"
-                    android:layout_width="fill_parent"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/rad_margin"
                     android:layout_marginRight="@dimen/rad_margin"
                     android:layout_weight="1"
-                    android:padding="@dimen/rad_padding" />
+                    android:padding="@dimen/rad_padding"
+                    android:text="Get" />
 
                 <CheckBox
                     android:id="@+id/opt_2"
@@ -64,7 +65,8 @@
                     android:layout_marginLeft="@dimen/rad_margin"
                     android:layout_marginRight="@dimen/rad_margin"
                     android:layout_weight="1"
-                    android:padding="@dimen/rad_padding" />
+                    android:padding="@dimen/rad_padding"
+                    android:text="Post" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,7 +82,8 @@
                     android:layout_marginLeft="@dimen/rad_margin"
                     android:layout_marginRight="@dimen/rad_margin"
                     android:layout_weight="1"
-                    android:padding="@dimen/rad_padding" />
+                    android:padding="@dimen/rad_padding"
+                    android:text="Action" />
 
                 <CheckBox
                     android:id="@+id/opt_4"
@@ -89,7 +92,8 @@
                     android:layout_marginLeft="@dimen/rad_margin"
                     android:layout_marginRight="@dimen/rad_margin"
                     android:layout_weight="1"
-                    android:padding="@dimen/rad_padding" />
+                    android:padding="@dimen/rad_padding"
+                    android:text="None of these" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

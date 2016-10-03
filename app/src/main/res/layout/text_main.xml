@@ -9,8 +9,67 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.nkp.quizApp.MainActivity"
-    tools:showIn="@layout/activity_main">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/question_wrapper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12.0dip"
+            android:text="@string/q3"
+            android:textColor="#fff"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/next_button"
+        android:layout_below="@+id/question_wrapper">
+
+        <LinearLayout
+            android:id="@+id/option_wrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/question_wrapper"
+            android:orientation="vertical"
+            android:paddingBottom="25.0dip"
+            android:paddingTop="25.0dip">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/opt_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/rad_margin"
+                    android:layout_marginRight="@dimen/rad_margin"
+                    android:layout_weight="1"
+                    android:hint="Answer"
+                    android:padding="@dimen/rad_padding" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/default_button_flat"
+        android:padding="@dimen/fab_margin"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textStyle="bold" />
 
 </RelativeLayout>
